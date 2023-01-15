@@ -43,7 +43,7 @@ def symulator_lotto():
                             result = False
                             break
                     else:
-                        print('Some numbers provided occures more than once. Try again!')
+                        print('Some numbers provided occurs more than once. Try again!')
                         counter = 0
                         result = False
                         break
