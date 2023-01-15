@@ -16,8 +16,9 @@ import random
 def guess_the_number():
     random_num = random.randint(1, 101)
     result = False
-    while result == False:
-        guess = input('Guess the number in range 1-100: ')
+    print('Guess the number in range 1-100:')
+    while not result:
+        guess = input()
         try:
             guess_num = int(guess)
             if guess_num == random_num:
@@ -31,5 +32,6 @@ def guess_the_number():
                 result = False
         except ValueError:
             print('It is not a number. Please try again with a right value.')
+
 
 guess_the_number()
