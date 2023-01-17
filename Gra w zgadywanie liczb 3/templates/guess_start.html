@@ -7,8 +7,9 @@
 <body>
     <p>Think a number in range 0-1000 and I will try to guess it in at most 10 steps!</p>
     <form method="POST">
-        <input type="hidden" name="minimum" value="minimum">
-        <input type="hidden" name="maximum" value="maximum">
+        <input type="hidden" name="minimum" value="{{ minimum }}">
+        <input type="hidden" name="maximum" value="{{ maximum }}">
+        <input type="hidden" name="guess" value="{{ guess }}">
         <input type="submit" name="button" value="I am ready!">
     </form>
 </body>

@@ -7,12 +7,12 @@
 <body>
     <p>{{ info }}</p>
     <form method="POST">
+        <input type="hidden" name="minimum" value="{{ minimum }}">
+        <input type="hidden" name="maximum" value="{{ maximum }}">
+        <input type="hidden" name="guess" value="{{ guess }}">
         <input type="submit" name="button" value="Too small">
         <input type="submit" name="button" value="Too big">
         <input type="submit" name="button" value="You win!">
-        <input type="hidden" name="minimum" value="minimum">
-        <input type="hidden" name="maximum" value="maximum">
-        <input type="hidden" name="guess" value="guess">
     </form>
 </body>
 </html>
